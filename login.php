@@ -9,7 +9,7 @@ mysql_select_db($database_localhost, $localhost);
  
 $u_id = $_POST['u_id'];
 $u_pw = $_POST['u_pw'];
-$query_search = "select * from custom_info where u_id = '".$id."' AND u_pw = '".$password."'";
+$query_search = "select * from custom_info where u_id = '".$u_id."' AND u_pw = '".$u_pw."'";
 $query_exec = mysql_query($query_search) or die(mysql_error());
 $rows = mysql_num_rows($query_exec);
  
